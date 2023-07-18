@@ -1,0 +1,145 @@
+:root {
+  --dark_gray: #333;
+  --light_gray: #4f4f4f;
+  --inconsolata: "Inconsolata", monospace;
+  --space_mono: "Space Mono", monospace;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--space_mono);
+  padding: 2rem 2.4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_title {
+  color: var(--dark_gray);
+  font-family: var(--inconsolata);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.scarecrow {
+  width: 28.7rem;
+  height: 23.8rem;
+  margin: 6rem 0;
+  align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .scarecrow {
+    width: 54rem;
+    height: 44.7rem;
+  }
+}
+
+.wrapper-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper-info {
+    max-width: 58.6rem;
+  }
+}
+
+.title_info {
+  color: var(--dark_gray, #333);
+  font-family: var(--space_mono);
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.5rem;
+  letter-spacing: -0.17rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .title_info {
+    font-size: 6.4rem;
+  }
+}
+
+.paragraph_info {
+  color: var(--light_gray, #4f4f4f);
+  font-family: var(--space_mono);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.06rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .paragraph_info {
+    font-size: 2.4rem;
+  }
+}
+
+.button {
+  padding: 2.4rem 4.3rem;
+  background-color: var(--dark_gray, #333);
+  width: fit-content;
+  color: #fff;
+
+  font-family: var(--space_mono);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer_paragraph {
+  font-family: var(--montserrat);
+  color: #bdbdbd;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer_link {
+  color: #bdbdbd;
+  font-family: var(--montserrat);
+
+  text-decoration-line: underline;
+}
